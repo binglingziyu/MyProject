@@ -4,6 +4,7 @@ import java.util.List;
 
 public class Image {
 	private String message;
+	private String msg;
 	private int image;
 	private List<Person> list;
 	public int getImage() {

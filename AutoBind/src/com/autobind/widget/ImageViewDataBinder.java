@@ -5,7 +5,6 @@ import android.graphics.drawable.Drawable;
 import android.view.View;
 import android.widget.ImageView;
 
-import com.autobind.IControlDataBinder;
 
 public class ImageViewDataBinder implements IControlDataBinder {
 //	DisplayImageOptions options;

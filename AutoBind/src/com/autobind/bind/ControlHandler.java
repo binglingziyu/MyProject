@@ -1,4 +1,4 @@
-package com.autobind;
+package com.autobind.bind;
 
 import android.view.View;
 import android.widget.EditText;
@@ -6,6 +6,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.autobind.widget.EditTextDataBinder;
+import com.autobind.widget.IControlDataBinder;
 import com.autobind.widget.ImageViewDataBinder;
 import com.autobind.widget.TextViewDataBinder;
 

@@ -1,4 +1,4 @@
-package com.autobind;
+package com.autobind.widget;
 
 import android.view.View;
 

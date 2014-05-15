@@ -2,6 +2,8 @@ package com.autobind;
 
 import java.util.HashMap;
 
+import com.autobind.bind.Binding;
+
 import android.app.Activity;
 import android.view.View;
 

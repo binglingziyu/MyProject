@@ -1,6 +1,5 @@
 package com.autobind.widget;
 
-import com.autobind.IControlDataBinder;
 
 import android.view.View;
 import android.widget.EditText;

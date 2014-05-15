@@ -3,7 +3,7 @@ package com.example.test03;
 import java.util.List;
 
 public class Image {
-	private String msg;
+	private String message;
 	private int image;
 	private List<Person> list;
 	public int getImage() {

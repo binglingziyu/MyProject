@@ -116,13 +116,13 @@ public class Binding {
 	 * 绑定数据
 	 * @param contents
 	 */
-	public void  execute(Map<String, ? extends IViewContent> contents) {
+	public void  execute(Map<String, ViewContent> contents) {
 		if (bind_what.equals("view")) {
 			try {
 				Iterator<String> iterator = contents.keySet().iterator();
 				while(iterator.hasNext()){
 					String key = iterator.next();
-					IViewContent value = contents.get(key);
+					ViewContent value = contents.get(key);
 					mControls.get(key).ToControl(view.findViewById(mIDs.get(key)), value);
 				}
 				
@@ -139,7 +139,7 @@ public class Binding {
 				Iterator<String> iterator = contents.keySet().iterator();
 				while(iterator.hasNext()){
 					String key = iterator.next();
-					IViewContent value = contents.get(key);
+					ViewContent value = contents.get(key);
 					mControls.get(key).ToControl(activity.findViewById(mIDs.get(key)), value);
 				}
 //				for (Control item : mControls) {
@@ -156,7 +156,7 @@ public class Binding {
 				Iterator<String> iterator = contents.keySet().iterator();
 				while(iterator.hasNext()){
 					String key = iterator.next();
-					IViewContent value = contents.get(key);
+					ViewContent value = contents.get(key);
 					findFields(holder);
 					mControls.get(key).ToControl(mView.get(key), value);
 				}
@@ -177,9 +177,9 @@ public class Binding {
 	 * 绑定数据
 	 * @param contents
 	 */
-	public void  execute(List<? extends IViewContent> contents) {
-		Map<String, IViewContent> map = new HashMap<String, IViewContent>();
-		for(IViewContent content:contents){
+	public void  execute(List<ViewContent> contents) {
+		Map<String, ViewContent> map = new HashMap<String, ViewContent>();
+		for(ViewContent content:contents){
 			String key = content.getId();
 			map.put(key, content);
 		}
@@ -190,12 +190,11 @@ public class Binding {
 	 * 绑定数据
 	 * @param t
 	 */
-	public <T extends IViewContent> void execute(T[] t){
-		Map<String, IViewContent> map = new HashMap<String, IViewContent>();
-		for(T item:t){
-			IViewContent ivc = (IViewContent) item;
-			String key = ivc.getId();
-			map.put(key, ivc);
+	public void execute(ViewContent[] contents){
+		Map<String, ViewContent> map = new HashMap<String, ViewContent>();
+		for(ViewContent item:contents){
+			String key = item.getId();
+			map.put(key, item);
 		}
 		execute(map);
 	}

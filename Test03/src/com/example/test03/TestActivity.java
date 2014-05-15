@@ -1,10 +1,5 @@
 package com.example.test03;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-
 import android.app.Activity;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
@@ -13,7 +8,7 @@ import android.widget.LinearLayout;
 
 import com.autobind.Binding;
 import com.autobind.BindingFactory;
-import com.autobind.IViewContent;
+import com.autobind.ViewContent;
 import com.lidroid.xutils.ViewUtils;
 import com.lidroid.xutils.view.annotation.ViewInject;
 

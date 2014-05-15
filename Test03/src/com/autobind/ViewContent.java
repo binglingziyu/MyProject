@@ -1,26 +1,21 @@
-package com.example.test03;
-
-import com.autobind.IViewContent;
+package com.autobind;
 
 
-public class ViewContent implements IViewContent{
+
+public class ViewContent{
 	private String id;
 	private String type;
 	private Object value;
 	private String desc;
-	@Override
 	public String getId() {
 		return this.id;
 	}
-	@Override
 	public String getType() {
 		return this.type;
 	}
-	@Override
 	public Object getValue() {
 		return this.value;
 	}
-	@Override
 	public String getDesc() {
 		return this.desc;
 	}

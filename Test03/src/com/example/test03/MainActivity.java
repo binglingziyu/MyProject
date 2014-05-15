@@ -13,6 +13,7 @@ import android.widget.Toast;
 
 import com.autobind.Binding;
 import com.autobind.BindingFactory;
+import com.autobind.ViewContent;
 import com.lidroid.xutils.ViewUtils;
 import com.lidroid.xutils.view.annotation.ViewInject;
 import com.lidroid.xutils.view.annotation.event.OnClick;

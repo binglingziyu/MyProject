@@ -36,7 +36,7 @@ public class ControlHandler {
 		
 	private IControlDataBinder mDataBinder;
 	
-    public void ToControl(View view,IViewContent content) throws Exception
+    public void ToControl(View view,ViewContent content) throws Exception
     {
     	//MemberInvoke mi = GetMemberInvoke(source.getClass());
     	//if(!mi.GetInvalid())

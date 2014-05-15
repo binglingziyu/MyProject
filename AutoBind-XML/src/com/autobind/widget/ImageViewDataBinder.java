@@ -6,11 +6,8 @@ import android.view.View;
 import android.widget.ImageView;
 
 import com.autobind.IControlDataBinder;
-import com.example.test03.R;
 import com.nostra13.universalimageloader.core.DisplayImageOptions;
 import com.nostra13.universalimageloader.core.ImageLoader;
-import com.nostra13.universalimageloader.core.assist.ImageScaleType;
-import com.nostra13.universalimageloader.core.display.RoundedBitmapDisplayer;
 
 public class ImageViewDataBinder implements IControlDataBinder {
 	DisplayImageOptions options;
